@@ -24,7 +24,7 @@ portfolio_url="https://adityagavandiportfolio.netlify.app/"
 github_url="https://github.com/adityagavandi61"
 linkedIn_url="https://linkedin.com/in/adityagavandi"
 
-def send_email(subject, recipient_email, name, position, company,resume_path):
+def send_email(subject, recipient_email, name, position, company,resume_path,platform):
     # Base code for mail
     message = EmailMessage()
     message["Subject"] = subject
@@ -35,16 +35,10 @@ def send_email(subject, recipient_email, name, position, company,resume_path):
     # Email content
     message.set_content(
         f"""
-        Respected {name},
+        Dear {name},
         
         I hope this email finds you well. I am writing to apply for the 
-        {position} role at {company}, as advertised on LinkedIn.
-
-        I am a skilled web developer with experience in Python and Django. I developed a 
-        social media website that enables users to connect, share, and interact seamlessly. 
-        This project demonstrates my proficiency in Python, Django, SQLite3, and front-end technologies like 
-        HTML, CSS, and JavaScript. My work on this project earned me the runner-up prize in a social networking 
-        site design competition.
+        {position} role at {company}, as advertised on {platform}.
 
         I attached my resume and portfolio attached for your review. I would welcome the opportunity 
         to discuss how I can contribute to your team.
@@ -63,18 +57,11 @@ def send_email(subject, recipient_email, name, position, company,resume_path):
         f"""
         <html>
         <body style="color: black; font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
-            <p>Respected {name},</p>
+            <p>Dear {name},</p>
             <p>
                 I hope this email finds you well. I am writing to apply for the 
                 <strong style="font-weight: bold;">{position}</strong> role at <strong style="font-weight: bold;">{company}</strong>, as advertised on 
-                <em style="font-style: italic;">LinkedIn</em>.
-            </p>
-            <p>
-                I am a skilled web developer with experience in Python and Django. I developed a 
-                <strong style="font-weight: bold;">social media website</strong> that enables users to connect, share, and interact seamlessly. 
-                This project demonstrates my proficiency in Python, Django, SQLite3, and front-end technologies like 
-                HTML, CSS, and JavaScript. My work on this project earned me the runner-up prize in a social networking 
-                site design competition.
+                <em style="font-style: italic;">{platform}</em>.
             </p>
             <p>
                 I attached my resume and portfolio for your review. I would welcome the opportunity 

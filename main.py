@@ -81,6 +81,7 @@ def sheet_data(df):
             send_email(
                 subject=f"Application for {row['position']}",
                 recipient_email=row['email'],
+                platform = row['platform'],
                 name=row['name'],
                 position=row['position'],
                 company=row['company'],
