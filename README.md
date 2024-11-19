@@ -46,7 +46,8 @@ The input spreadsheet should have the following columns:
 ![Google Spreadsheet data](https://github.com/user-attachments/assets/411b04c8-9549-494e-93fc-7be2438f85b2)
 - After runnig script the output show in terminal
   ![Return data](https://github.com/user-attachments/assets/50aed14f-98fc-48f3-913c-eb786b6ea08a)
-
+- Successfully deployed the project on a reliable hosting platform, ensuring seamless accessibility and performance.
+  ![Screenshot 2024-11-19 174356](https://github.com/user-attachments/assets/72af88e0-25f2-4719-bf1d-384fef007be0)
   
 
 ## **Usage**
