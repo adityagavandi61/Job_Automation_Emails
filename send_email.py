@@ -37,20 +37,21 @@ def send_email(subject, recipient_email, name, position, company,resume_path,pla
         f"""
         Dear {name},
 
-        I am excited about the opportunity to apply for the {position} position currently open at {company}. Having a solid foundation with a proven history of successfully executing meaningful projects using Python programming, I look forward to bringing my capabilities and commitment to your team.
+        I am interested in applying for the {position} position at {company}. I have a solid base with Python programming, and by applying my experience in carrying out impactful projects in my previous roles, I seek to bring that into the team.
 
-        Throughout my professional experience, I have taken assignments that show my technical ability and can solve problems. The high points include:
-        Social Media Website: A fully functional social media website was designed and developed using Python, Django, and SQLite. This project won the second prize in a design competition for social networking sites, hence speaking to its robustness and user-friendly attributes.
-        Job Application Automation Tool: I developed an application based on Python that uses libraries such as pandas and requests to automate email communication pertaining to job applications. This project shows my ability to address real-world problems through innovative solutions.
-        Portfolio Website: Designed a personal portfolio that communicated all projects and skills while having responsive design and efficient functionality on the backend side.
+        During my career, I have started projects that demonstrate good technical skills with problem-solving abilities. These include:
+        A full-stack social media web application built on the design and development basis of Python, Django and SQLite. This is considered a good runner-up in terms of designing a social networking site, so it is therefore strong and friendly to a user.
+        Job Application Automation Tool: I designed an automation application using Python and libraries like pandas and requests that automates email communications about job applications. This project demonstrates my ability to overcome real-world challenges by innovative solutions.
+        Portfolio Website: To showcase all the projects and skills, I developed a personal portfolio, ensuring seamless user experience through responsive design and efficient backend functionality.
 
-        In addition to my technical expertise, I can bring a collaborative mindset and the ability to adapt quickly to new challenges and I feel that my skills are well in line with your goals. I have attached my resume and the link to my portfolio at ({portfolio_url}). It would be great if you would want to discuss my experience and expertise and how I might assist in making {company} a success.
+        In addition to the technical capabilities, I would bring collaborative thinking and the ability to quickly change gears to address different challenges and I assure you that my skills are rather well-aligned with your overall objectives. I have attached my resume and the link to my portfolio below. I would be more than happy to discuss how my experience and skills may contribute to the success of {company}.
 
-        I appreciate your consideration of my application. I look forward to the opportunity to contribute to your team and develop professionally with {company}.
+        I am writing to simply thank you for your time. I am excited to join your team and grow with {company}.
         Warm regards,
         Aditya Anand Gavandi
         +91 9637980861
         adityagavandi1998@gmail.com
+        Porfolio : {portfolio_url}
         """,
         subtype="plain",
     )
@@ -63,32 +64,32 @@ def send_email(subject, recipient_email, name, position, company,resume_path,pla
         <p>Dear <strong>{name}</strong>,</p>
 
         <p>
-            I am excited about the opportunity to apply for the <strong>{position}</strong> position currently open at <strong>{company}</strong>. Having a solid foundation with a proven history of successfully executing meaningful projects using Python programming, I look forward to bringing my capabilities and commitment to your team.
+            I am interested in applying for the <strong>{position}</strong> position at <strong>{company}</strong>. I have a solid base with Python programming, and by applying my experience in carrying out impactful projects in my previous roles, I seek to bring that into the team.
         </p>
 
         <p>
-            Throughout my professional experience, I have taken assignments that show my technical ability and problem-solving skills. The high points include:
+            During my career, I have started projects that demonstrate good technical skills with problem-solving abilities. These include:
         </p>
 
         <ul>
             <li>
-                <strong>Social Media Website:</strong> A fully functional social media website designed and developed using Python, Django, and SQLite. This project won second prize in a design competition for social networking sites, highlighting its robustness and user-friendly attributes.
+                A full-stack social media web application built on the design and development basis of Python, Django, and SQLite. This project was a strong runner-up in a competition for designing a social networking site, highlighting its robustness and user-friendly features.
             </li>
             <li>
-                <strong>Job Application Automation Tool:</strong> A Python-based application utilizing libraries like <code>pandas</code> and <code>requests</code> to automate email communication for job applications. This project showcases my ability to address real-world problems through innovative solutions.
+                <strong>Job Application Automation Tool:</strong> I designed an automation application using Python and libraries like <code>pandas</code> and <code>requests</code> that automates email communications about job applications. This project demonstrates my ability to overcome real-world challenges with innovative solutions.
             </li>
             <li>
-                <strong>Portfolio Website:</strong> A personal portfolio designed to showcase all projects and skills, featuring responsive design and efficient backend functionality.
+                <strong>Portfolio Website:</strong> To showcase all the projects and skills, I developed a personal portfolio, ensuring seamless user experience through responsive design and efficient backend functionality.
             </li>
         </ul>
 
         <p>
-            In addition to my technical expertise, I bring a collaborative mindset and the ability to adapt quickly to new challenges. I feel that my skills align well with your goals. I have attached my resume and included the link to my portfolio here:
-            <a href="{portfolio_url}" target="_blank">Link</a>. I would be delighted to discuss my experience and expertise further and explore how I might assist in making <strong>{company}</strong> a success.
+            In addition to the technical capabilities, I would bring collaborative thinking and the ability to quickly change gears to address different challenges, and I assure you that my skills are well-aligned with your overall objectives. I have attached my resume and included the link to my portfolio here: 
+            <a href="{portfolio_url}" target="_blank">Link</a>. I would be more than happy to discuss how my experience and skills may contribute to the success of <strong>{company}</strong>.
         </p>
 
         <p>
-            I appreciate your consideration of my application. I look forward to the opportunity to contribute to your team and develop professionally with <strong>{company}</strong>.
+            I am writing to simply thank you for your time. I am excited to join your team and grow with <strong>{company}</strong>.
         </p>
 
         <p>
